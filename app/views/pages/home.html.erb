@@ -1,6 +1,6 @@
 <% if user_signed_in? %>
-  <h1>Hello <%= current_user.email %></h1>
+  <h2>Hello <%= current_user.first_name || current_user.email %></h2>
 <% else %>
-  <h1>Hello guest !</h1>
+  <h2>Hello guest !</h2>
 <% end %>
 <p>Find me in app/views/pages/home.html.erb</p>
